@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
         int* local_primes = (int*) calloc(N, sizeof(int));
         int local_k = 0;
 
-        #pragma omp for
+        #pragma omp for schedule(runtime)
         for(int n = primes[k-1] + 2; n <= M; n += 2) {
             if(is_prime(n, primes, k)) {
                 local_primes[local_k++] = n;

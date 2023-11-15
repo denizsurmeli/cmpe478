@@ -56,7 +56,7 @@ int main(int argc,char **argv){
         n += 2;                 
     }
 
-    #pragma omp parallel for schedule(dynamic)
+    #pragma omp parallel for schedule(runtime)
     for(int n = primes[k-1] + 2;n <= M; n +=2) {
        int p = is_prime(n, primes, k);
        if(p) {
