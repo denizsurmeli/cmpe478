@@ -71,6 +71,8 @@ int main(int argc,char **argv){
 
     free(primes);
 
+  
+    // seconds
     double elapsed = omp_get_wtime() - start;
     printf("%f\n", elapsed);
     return 0;

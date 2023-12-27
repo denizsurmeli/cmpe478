@@ -1,0 +1,6 @@
+build/*
+results.json
+*.csv
+*.pdf
+*.txt
+.DS_Store
